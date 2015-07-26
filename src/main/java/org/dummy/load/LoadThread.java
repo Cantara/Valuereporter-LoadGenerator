@@ -14,12 +14,16 @@ public class LoadThread implements Runnable {
     @Override
     public void run() {
         do {
-            System.out.println("Hello You at " + System.currentTimeMillis());
+            performVisibleLoad();
             try {
                 Thread.sleep(sleepMillis);
             } catch (InterruptedException e) {
                 //sleep interupted
             }
         } while (true);
+    }
+
+    public void performVisibleLoad() {
+        System.out.println("Hello You at " + System.currentTimeMillis());
     }
 }
