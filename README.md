@@ -12,7 +12,7 @@ java -jar target/load-generator-0.1-SNAPSHOT.jar
 __With Valuereporter-agent:__
 
 ```
-java -javaagent:../Valuereporter-Agent/target/valuereporter-agent-jar-with-dependencies.jar= \
-base.package:com.example,load.host:localhost,valuereporter.port:4901,prefix:myService \
+java -javaagent:../Valuereporter-Agent/target/valuereporter-agent-jar-with-dependencies.jar=\
+base.package:org.dummy,load.host:localhost,valuereporter.port:4901,prefix:myService \
  -jar target/load-generator-0.1-SNAPSHOT.jar
 ```
