@@ -1,4 +1,4 @@
-package org.valuereporter.load;
+package org.dummy.load;
 
 /**
  * Created by baardl on 26.07.15.
