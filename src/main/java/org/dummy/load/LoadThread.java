@@ -1,9 +1,14 @@
 package org.dummy.load;
 
+import org.slf4j.Logger;
+
+import static org.slf4j.LoggerFactory.getLogger;
+
 /**
  * Created by baardl on 26.07.15.
  */
 public class LoadThread implements Runnable {
+    private static final Logger log = getLogger(LoadThread.class);
 
     private final int sleepMillis;
 
@@ -24,6 +29,6 @@ public class LoadThread implements Runnable {
     }
 
     public void performVisibleLoad() {
-        System.out.println("Hello You at " + System.currentTimeMillis());
+        log.trace("Hello You at " + System.currentTimeMillis());
     }
 }
